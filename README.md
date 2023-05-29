@@ -1,6 +1,6 @@
-# Desafio_Pizza
+# Desafio_Pizza_ Patroni
 
-Desafio em HTML, CSS e JS para calcular a divisão do valor total de uma conta em uma pizzaria.
+Desafio em HTML, CSS e JS para calcular a divisão do valor total de uma conta de uma pizzaria.
 
 HTML:
 O HTML possui uma seção com um formulário para inserir os valores da conta, da taxa e a quantidade de pessoas que pagarão. Ao clicar no botão "Enviar", a função formEvent() é acionada para calcular o valor a ser pago por cada pessoa.
