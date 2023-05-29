@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patroni Pizzeria</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            color: #096b1c;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        fieldset {
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        #valorConta,
+        #valorTaxa,
+        #quantidadePessoas {
+            width: calc(100% - 22px);
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            background-color: #e49595;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Patroni Pizzeria</h2>
+        <form id="form">
+            <fieldset>
+                <input id="valorConta" placeholder="Valor Total da Conta" required> 
+            </fieldset>
+            <fieldset>
+                <input id="valorTaxa" placeholder="Valor Total da Taxa" required> 
+            </fieldset>
+            <fieldset>
+                <input id="quantidadePessoas" placeholder="Quantidade de Pagantes" required> 
+            </fieldset>
+            <fieldset>
+                <button onclick="formEvent()" id="buttonSend">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+    <section>
+        <div id="resultado"></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
